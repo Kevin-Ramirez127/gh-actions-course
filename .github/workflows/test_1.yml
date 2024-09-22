@@ -28,5 +28,7 @@ jobs:
     needs: hello
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout
+      uses: actions/checkout@v4.1.7
     - name: LS
       run: ls -al

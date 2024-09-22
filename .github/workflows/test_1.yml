@@ -17,7 +17,9 @@ jobs:
 
     - name: read file
       run: cat hello.txt 
+
   other:
+    needs: hello
     runs-on: ubuntu-latest
     steps:
     - name: LS

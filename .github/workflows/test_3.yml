@@ -1,0 +1,14 @@
+name: Services
+
+on: [push]
+
+jobs:
+  ddbb:
+    runs-on: ubuntu-latest
+    services:
+      my-sql:
+        image: mysql:5.7
+        env: 
+          MYSQL_ROOT_PASSWORD: example
+        ports:
+          - 3306:3306

@@ -16,5 +16,3 @@ jobs:
           node-version: latest
       - name: node version
         run: node -v
-      - name: install dependencies
-        run: npm i 
